@@ -41,6 +41,10 @@ h2{
     text-align: center;
     margin-bottom: 30px;
 }
+.section-title h2{
+    font-size: 30px;
+    line-height: 40px;
+}
 .sections-gap{
     margin: 50px 0px;
 }
@@ -127,7 +131,7 @@ nav{
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.product-item img{
+.product-item img,.blog-img img{
     width: 100%;
 }
 .product-name{
@@ -159,5 +163,50 @@ nav{
     line-height: 20px;
     text-align: justify;
 }
+/*------------------------------------- blog section------------------------------ */
+.blog{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-item{
+    padding: 15px;
+    width: 350px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.blog-catagory{
+    color: #E02C6D;
+    letter-spacing: 0.2em;
+    margin: 20px 0;
+}
+.blog-name{
+    margin-bottom: 20px;
 
-
+}
+.blog-name h2{
+    font-size: 20px;
+    line-height: 30px;
+}
+/* ------------------------------ footer--------------------------------------------- */
+footer{
+    text-align: center;
+    align-items: center;
+    background-color: #0A0826;
+    padding: 40px 0;
+}
+footer h2{
+    color: #ffffff;
+}
+footer p{
+    margin: 5px 0;
+    color: #ffffff;
+}
+footer p i{
+    margin-top: 10px;
+    letter-spacing: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+footer p i:hover{
+    color: #f35b93;
+}
