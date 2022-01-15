@@ -104,15 +104,11 @@ nav{
     margin: 16px 0;
 }
 .banner-right{
-   height: 440;
-   width: 440px;
+   height: 440px;
+   width: 100%;
    background-repeat: no-repeat;
    background-image: url(./main-camera.png);
    animation: slide 10s infinite;
-}
-.banner-right p{
-    visibility: hidden;
-    overflow: hidden;
 }
 .banner-right img{
     height: 80%
