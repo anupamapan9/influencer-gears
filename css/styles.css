@@ -306,13 +306,22 @@ footer p i:hover{
         align-items: center;
         padding: 20px 0;
         background-color: #ffffff;
-        transform: translateY(-330px);
+        transform: translateY(-3300px);
         transition: .5s ease-in-out;
+        z-index: 1000px;
     }
     .navigation li a{
         color: #121212;
     }
     #nav-toggler:checked ~ .navigation{
         transform: translateY(0px);
+    }
+}
+@media (max-width:380px){
+    .banner{
+        max-width: 380px;
+    }
+    .banner-right img{
+        width: 100%;
     }
 }
