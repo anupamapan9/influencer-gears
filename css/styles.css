@@ -36,9 +36,13 @@ h2{
     color: white;
     cursor: pointer;
     transition-duration: 0.5s;
+    box-shadow: 0 7px 0 #a5075e;
+    position: relative;
+    top: 0;
 }
-.banner-btn:hover{
-    background-color: #830432;
+.banner-btn:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #a5075e;
 }
 .section-title{
     text-align: center;
