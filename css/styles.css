@@ -90,7 +90,6 @@ nav{
     height: 100vh;
     height: calc(100vh - 80px);
     margin-bottom: 100px;
-    max-width: 1200px;
 }
 .banner-left{
     display: flex;
@@ -109,32 +108,17 @@ nav{
 .banner-right img{
     height: 80%
 }
-.hero{
-    position: relative;
-    max-width: 1200px;
-}
-.bubbles{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    bottom: -70px;
-}
-.bubbles img{
-    width: 50px;
-    animation: bubble 7s linear infinite;
-}
 /*------------------------------------ products sections----------------------------- */
 .products, .blog{
    display: grid;
    grid-template-columns: repeat(3,1fr);
+   grid-gap: 30px;
    justify-content: center;
-   grid-gap:30px;
    margin-bottom: 50px;
 }
 .product-item{
     padding: 15px;
-    width: 350px;
+    /* width: 315px; */
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -175,7 +159,7 @@ nav{
 
 .blog-item{
     padding: 15px;
-    width: 350px;
+    /* width: 315px; */
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -216,57 +200,11 @@ footer p i:hover{
     color: #f35b93;
 }
 
-/*------------------------- hero header annimation ------------------------------- */
-@keyframes bubble{
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-80vh);
-        opacity: 0;
-    }
-}
-.bubbles img:nth-child(1){
-    animation-delay: 3s;
-    width: 25px;
-}
-.bubbles img:nth-child(2){
-    animation-delay: 1.65s;
-}
-.bubbles img:nth-child(3){
-    animation-delay: 1s;
-}
-.bubbles img:nth-child(4){
-    animation-delay: 1.6s;
-    width: 25px;
-}
-.bubbles img:nth-child(5){
-    animation-delay: 3.6s;
-    width: 20px;
-}
-.bubbles img:nth-child(6){
-    animation-delay: 3s;
-    width: 30px;
-}
-.bubbles img:nth-child(7){
-    animation-delay: 2s;
-}
-.bubbles img:nth-child(5){
-    animation-delay: 3.8s;
-    width: 40px;
-}
- 
  /*--------------------------- responsive style----------------------------------- */
 @media (max-width:950px){
     .blog,.products{
         grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
     }
 
     .banner-left h1{
@@ -290,6 +228,9 @@ footer p i:hover{
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .blog-item, .product-item{
+        width: 300px;
     }
     .banner-left{
         order: 2;
