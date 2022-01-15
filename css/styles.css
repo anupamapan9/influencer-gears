@@ -317,11 +317,3 @@ footer p i:hover{
         transform: translateY(0px);
     }
 }
-@media (max-width:320px){
-    .banner{
-        max-width: 320px;
-    }
-    .banner-right img{
-        width: 100%;
-    }
-}
