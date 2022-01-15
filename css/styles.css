@@ -102,13 +102,11 @@ nav{
 }
 .banner-right{
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 440px;
-    height: 414px;
+    align-items: flex-end
 }
 .banner-right img{
-    height: 100%
+    height: 80%
 }
 /*------------------------------------ products sections----------------------------- */
 .products, .blog{
@@ -207,8 +205,12 @@ footer p i:hover{
     .blog,.products{
         grid-template-columns: repeat(2,1fr);
     }
+
     .banner-left h1{
         font-size: 35px;
+    }
+    .banner-right img{
+        height: 50%
     }
 }
 @media (max-width:800px){
@@ -217,9 +219,7 @@ footer p i:hover{
         height: fit-content;
     }
     .blog,.products{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+      grid-template-columns: 1fr;
     }
     .banner-left{
         order: 2;
