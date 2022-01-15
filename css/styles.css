@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Raleway', sans-serif;
     color: #3A3A3A;
@@ -101,9 +104,14 @@ nav{
     margin: 16px 0;
 }
 .banner-right{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+   height: 440;
+   width: 440px;
+   background-repeat: no-repeat;
+   background-image: url(./main-camera.png);
+   animation: slide 10s infinite;
+}
+.banner-right p{
+    visibility: hidden;
 }
 .banner-right img{
     height: 80%
@@ -210,14 +218,6 @@ footer p i:hover{
     .banner-left h1{
         font-size: 35px;
     }
-    .banner-right{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    .banner-right img{
-        height: 80%;
-    }
 }
 @media (max-width:850px){
     .banner{
@@ -232,6 +232,9 @@ footer p i:hover{
     .blog-item, .product-item{
         width: 300px;
     }
+    .banner-right{
+        padding-bottom: 300px;
+     }
     .banner-left{
         order: 2;
         padding: 50px 0;
@@ -258,4 +261,19 @@ footer p i:hover{
     #nav-toggler:checked ~ .navigation{
         transform: translateY(0px);
     }
+}
+@keyframes slide{
+    25%{
+        background-image: url(./main-camera-2.png);
+    }
+    50%{
+        background-image: url(./main-camera-3.png);
+    }
+    75%{
+        background-image: url(./main-camera-4.png);
+    }
+    100%{
+        background-image: url(./main-camera.png);
+    }
+
 }
