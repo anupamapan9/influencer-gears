@@ -111,11 +111,11 @@ nav{
 }
 .hero{
     position: relative;
+    max-width: 1200px;
 }
 .bubbles{
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-around;
     position: absolute;
     bottom: -70px;
@@ -258,8 +258,9 @@ footer p i:hover{
 .bubbles img:nth-child(7){
     animation-delay: 2s;
 }
-.bubbles img:nth-child(8){
-    animation-delay: 4s;
+.bubbles img:nth-child(5){
+    animation-delay: 3.8s;
+    width: 40px;
 }
  
  /*--------------------------- responsive style----------------------------------- */
@@ -307,8 +308,8 @@ footer p i:hover{
         padding: 20px 0;
         background-color: #ffffff;
         transform: translateY(-3300px);
-        transition: .5s ease-in-out;
-        z-index: 1000px;
+        transition: .4s ease-in-out;
+        z-index: 1000;
     }
     .navigation li a{
         color: #121212;
